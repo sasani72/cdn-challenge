@@ -13,6 +13,9 @@ class Transaction extends Model
         'wallet_id', 'type', 'amount'
     ];
 
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     */
     public function wallet()
     {
         return $this->belongsTo(Wallet::class);

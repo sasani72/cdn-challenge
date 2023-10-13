@@ -14,6 +14,10 @@ class Voucher extends Model
         'title', 'code', 'type', 'amount', 'max_uses', 'starts_at', 'expires_at', 'description'
     ];
 
+    /**
+     * @param $query
+     * @return mixed
+     */
     public function scopeIsValid($query)
     {
         $date = now()->format('Y-m-d H:i:s');
@@ -24,6 +28,9 @@ class Voucher extends Model
             ->where('expires_at', '>', $date);
     }
 
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
+     */
     public function users()
     {
         return $this->belongsToMany(User::class, 'user_voucher')

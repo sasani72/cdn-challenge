@@ -11,12 +11,6 @@ use App\Repositories\VoucherRepository;
 
 class VoucherService
 {
-    protected $voucherRepository;
-
-    public function __construct(VoucherRepository $voucherRepository)
-    {
-        $this->voucherRepository = $voucherRepository;
-    }
 
     /**
      * @param array $data
@@ -27,11 +21,9 @@ class VoucherService
         return Voucher::create($data);
     }
 
-
     /**
-     * @param array $data
-     * @param string $voucher
-     * @return mixed
+     * @param User $user
+     * @param String $code
      */
     public function redeem(User $user, String $code)
     {

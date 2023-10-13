@@ -19,7 +19,9 @@ class ProcessDeposit implements ShouldQueue
     protected $amount;
 
     /**
-     * Create a new job instance.
+     * ProcessDeposit constructor.
+     * @param $amount
+     * @param Wallet $wallet
      */
     public function __construct($amount, Wallet $wallet)
     {

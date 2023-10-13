@@ -3,20 +3,12 @@
 namespace App\Services;
 
 use App\Models\User;
-use App\Repositories\UserRepository;
 
 class UserService
 {
-    protected $userRepository;
-
-    public function __construct(UserRepository $userRepository)
-    {
-        $this->userRepository = $userRepository;
-    }
-
     /**
      * @param $mobile
-     * @return mixed
+     * @return \Illuminate\Database\Eloquent\Builder|\Illuminate\Database\Eloquent\Model
      */
     public function getUserByMobile($mobile)
     {

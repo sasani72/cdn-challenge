@@ -33,17 +33,25 @@ class User extends Authenticatable
         'remember_token',
     ];
 
-
+    /**
+     * @return bool
+     */
     public function isAdmin(): bool
     {
         return $this->role === UserRoles::ADMIN->value;
     }
 
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\HasOne
+     */
     public function wallet()
     {
         return $this->hasOne(Wallet::class);
     }
 
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
+     */
     public function vouchers()
     {
         return $this->belongsToMany(Voucher::class, 'user_voucher')

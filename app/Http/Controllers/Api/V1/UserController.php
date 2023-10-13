@@ -8,15 +8,29 @@ use Illuminate\Auth\AuthenticationException;
 use App\Services\UserService;
 use Illuminate\Http\Request;
 
+/**
+ * Class UserController
+ * @package App\Http\Controllers\Api\V1
+ */
 class UserController extends Controller
 {
     protected $userService;
 
+    /**
+     * UserController constructor.
+     * @param UserService $userService
+     */
     public function __construct(UserService $userService)
     {
         $this->userService = $userService;
     }
 
+
+    /**
+     * @param LoginRequest $request
+     * @return array
+     * @throws AuthenticationException
+     */
     public function login(LoginRequest $request)
     {
         $user = $this->userService->getUserByMobile($request->mobile);
