@@ -16,7 +16,7 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->string('code', 8)->unique();
-            $table->enum('type', VoucherTypes::cases())->default('charge');
+            $table->enum('type', VoucherTypes::values())->default('charge');
             $table->unsignedBigInteger('amount');
             $table->unsignedInteger('max_uses')->default(1)->index();
             $table->unsignedInteger('current_uses')->default(0)->index();

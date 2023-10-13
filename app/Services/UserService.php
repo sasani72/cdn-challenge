@@ -2,6 +2,7 @@
 
 namespace App\Services;
 
+use App\Models\User;
 use App\Repositories\UserRepository;
 
 class UserService
@@ -19,6 +20,11 @@ class UserService
      */
     public function getUserByMobile($mobile)
     {
-        return $this->userRepository->getByMobile($mobile);
+        $user = User::with('wallet')->firstOrCreate(['mobile' => $mobile]);
+
+        if ($user->wasRecentlyCreated) {
+            $user->wallet()->create();
+        }
+        return $user;
     }
 }

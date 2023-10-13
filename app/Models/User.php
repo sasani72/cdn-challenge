@@ -36,11 +36,19 @@ class User extends Authenticatable
 
     public function isAdmin(): bool
     {
-        return $this->role === UserRoles::ADMIN;
+        return $this->role === UserRoles::ADMIN->value;
     }
 
     public function wallet()
     {
         return $this->hasOne(Wallet::class);
+    }
+
+    public function vouchers()
+    {
+        return $this->belongsToMany(Voucher::class, 'user_voucher')
+            ->withPivot('redeemed_at')
+            ->using(UserVoucher::class)
+            ->as('user_voucher');
     }
 }
