@@ -7,14 +7,16 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 
-Route::post('login', [UserController::class, 'login']);
+Route::prefix('v1')->group(function () {
+    Route::post('login', [UserController::class, 'login']);
 
-Route::get('wallet/balance', [WalletController::class, 'getBalance']);
+    Route::get('wallet/balance', [WalletController::class, 'getBalance']);
 
-Route::get('wallet/transactions', [WalletController::class, 'getTransactions']);
+    Route::get('wallet/transactions', [WalletController::class, 'getTransactions']);
 
-Route::apiResource('vouchers', VoucherController::class)->only('store');
+    Route::apiResource('vouchers', VoucherController::class)->only('store');
 
-Route::post('vouchers/redeem', [VoucherController::class, 'redeem']);
+    Route::post('vouchers/redeem', [VoucherController::class, 'redeem']);
 
-Route::get('vouchers/{voucher}/users', [VoucherController::class, 'getVoucherUsers']);
+    Route::get('vouchers/{voucher}/users', [VoucherController::class, 'getVoucherUsers']);
+});

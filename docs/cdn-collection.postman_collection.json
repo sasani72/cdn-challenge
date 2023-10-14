@@ -25,7 +25,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"mobile\":\"09337290549\"\r\n}",
+					"raw": "{\r\n    \"mobile\":\"09120000000\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -33,7 +33,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://127.0.0.1:8000/api/login",
+					"raw": "http://127.0.0.1:8000/api/v1/login",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -44,6 +44,7 @@
 					"port": "8000",
 					"path": [
 						"api",
+						"v1",
 						"login"
 					]
 				}
@@ -56,7 +57,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"mobile\":\"09337290549\"\r\n}",
+							"raw": "{\r\n    \"mobile\":\"09120000000\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -64,7 +65,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/login",
+							"raw": "http://127.0.0.1:8000/api/v1/login",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -75,6 +76,7 @@
 							"port": "8000",
 							"path": [
 								"api",
+								"v1",
 								"login"
 							]
 						}
@@ -89,11 +91,11 @@
 						},
 						{
 							"key": "Date",
-							"value": "Fri, 13 Oct 2023 16:21:04 GMT"
+							"value": "Sat, 14 Oct 2023 17:08:11 GMT"
 						},
 						{
 							"key": "Date",
-							"value": "Fri, 13 Oct 2023 16:21:04 GMT"
+							"value": "Sat, 14 Oct 2023 17:08:11 GMT"
 						},
 						{
 							"key": "Connection",
@@ -125,7 +127,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"token\": \"4|Hann8FPUxqqaOf3ETTzLH6MpOjNrm2MMod4iLy5q67a390f9\",\n    \"type\": \"Bearer\"\n}"
+					"body": "{\n    \"token\": \"6|DMYiFOsrOKp1eBcE6ZkERKu6m327npiiBLAtiFz4e554d1e1\",\n    \"type\": \"Bearer\"\n}"
 				}
 			]
 		},
@@ -146,7 +148,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"title\":\"World cup final match\",\r\n    \"code\": \"worldcup\",\r\n    \"type\":\"charge\",\r\n    \"amount\":1000000,\r\n    \"max_uses\":1000,\r\n    \"starts_at\":\"2023-10-13 22:00:00\",\r\n    \"expires_at\":\"2023-10-13 23:59:59\"\r\n}",
+					"raw": "{\r\n    \"title\":\"World cup final match\",\r\n    \"code\": \"worldcup\",\r\n    \"type\":\"charge\",\r\n    \"amount\":1000000,\r\n    \"max_uses\":1000,\r\n    \"starts_at\":\"2023-10-14 22:00:00\",\r\n    \"expires_at\":\"2023-10-14 23:59:59\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -154,7 +156,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://127.0.0.1:8000/api/vouchers",
+					"raw": "http://127.0.0.1:8000/api/v1/vouchers",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -165,6 +167,7 @@
 					"port": "8000",
 					"path": [
 						"api",
+						"v1",
 						"vouchers"
 					]
 				}
@@ -177,7 +180,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"title\":\"World cup final match\",\r\n    \"code\": \"worldcup\",\r\n    \"type\":\"charge\",\r\n    \"amount\":1000000,\r\n    \"max_uses\":1000,\r\n    \"starts_at\":\"2023-10-13 22:00:00\",\r\n    \"expires_at\":\"2023-10-13 23:59:59\"\r\n}",
+							"raw": "{\r\n    \"title\":\"World cup final match\",\r\n    \"code\": \"worldcup\",\r\n    \"type\":\"charge\",\r\n    \"amount\":1000000,\r\n    \"max_uses\":1000,\r\n    \"starts_at\":\"2023-10-14 22:00:00\",\r\n    \"expires_at\":\"2023-10-14 23:59:59\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -185,7 +188,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/vouchers",
+							"raw": "http://127.0.0.1:8000/api/v1/vouchers",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -196,6 +199,7 @@
 							"port": "8000",
 							"path": [
 								"api",
+								"v1",
 								"vouchers"
 							]
 						}
@@ -210,11 +214,11 @@
 						},
 						{
 							"key": "Date",
-							"value": "Fri, 13 Oct 2023 18:25:25 GMT"
+							"value": "Sat, 14 Oct 2023 17:09:47 GMT"
 						},
 						{
 							"key": "Date",
-							"value": "Fri, 13 Oct 2023 18:25:25 GMT"
+							"value": "Sat, 14 Oct 2023 17:09:47 GMT"
 						},
 						{
 							"key": "Connection",
@@ -238,7 +242,7 @@
 						},
 						{
 							"key": "X-RateLimit-Remaining",
-							"value": "57"
+							"value": "59"
 						},
 						{
 							"key": "Access-Control-Allow-Origin",
@@ -246,7 +250,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"data\": {\n        \"title\": \"World cup final match\",\n        \"code\": \"worldcup\",\n        \"type\": \"charge\",\n        \"amount\": 1000000,\n        \"max_uses\": 1000,\n        \"starts_at\": \"2023-10-13 22:00:00\",\n        \"expires_at\": \"2023-10-13 23:59:59\",\n        \"updated_at\": \"2023-10-13T18:25:25.000000Z\",\n        \"created_at\": \"2023-10-13T18:25:25.000000Z\",\n        \"id\": 11\n    }\n}"
+					"body": "{\n    \"data\": {\n        \"title\": \"World cup final match\",\n        \"code\": \"worldcup\",\n        \"type\": \"charge\",\n        \"amount\": 1000000,\n        \"max_uses\": 1000,\n        \"starts_at\": \"2023-10-14 22:00:00\",\n        \"expires_at\": \"2023-10-14 23:59:59\",\n        \"updated_at\": \"2023-10-14T17:09:47.000000Z\",\n        \"created_at\": \"2023-10-14T17:09:47.000000Z\",\n        \"id\": 13\n    }\n}"
 				}
 			]
 		},
@@ -257,7 +261,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"code\": \"worldcup\",\r\n    \"mobile\":\"09337290540\"\r\n\r\n}",
+					"raw": "{\r\n    \"code\": \"worldcup\",\r\n    \"mobile\":\"09120000001\"\r\n\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -265,7 +269,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://127.0.0.1:8000/api/vouchers/redeem",
+					"raw": "http://127.0.0.1:8000/api/v1/vouchers/redeem",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -276,6 +280,7 @@
 					"port": "8000",
 					"path": [
 						"api",
+						"v1",
 						"vouchers",
 						"redeem"
 					]
@@ -289,7 +294,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"code\": \"worldcup\",\r\n    \"mobile\":\"09337290540\"\r\n\r\n}",
+							"raw": "{\r\n    \"code\": \"worldcup\",\r\n    \"mobile\":\"09120000001\"\r\n\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -297,7 +302,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/vouchers/redeem",
+							"raw": "http://127.0.0.1:8000/api/v1/vouchers/redeem",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -308,6 +313,7 @@
 							"port": "8000",
 							"path": [
 								"api",
+								"v1",
 								"vouchers",
 								"redeem"
 							]
@@ -323,11 +329,11 @@
 						},
 						{
 							"key": "Date",
-							"value": "Fri, 13 Oct 2023 18:26:14 GMT"
+							"value": "Sat, 14 Oct 2023 17:11:47 GMT"
 						},
 						{
 							"key": "Date",
-							"value": "Fri, 13 Oct 2023 18:26:14 GMT"
+							"value": "Sat, 14 Oct 2023 17:11:47 GMT"
 						},
 						{
 							"key": "Connection",
@@ -381,7 +387,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://127.0.0.1:8000/api/vouchers/9/users",
+					"raw": "http://127.0.0.1:8000/api/v1/vouchers/13/users",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -392,8 +398,9 @@
 					"port": "8000",
 					"path": [
 						"api",
+						"v1",
 						"vouchers",
-						"9",
+						"13",
 						"users"
 					]
 				}
@@ -414,7 +421,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/vouchers/11/users",
+							"raw": "http://127.0.0.1:8000/api/v1/vouchers/13/users",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -425,8 +432,9 @@
 							"port": "8000",
 							"path": [
 								"api",
+								"v1",
 								"vouchers",
-								"11",
+								"13",
 								"users"
 							]
 						}
@@ -441,127 +449,11 @@
 						},
 						{
 							"key": "Date",
-							"value": "Fri, 13 Oct 2023 18:29:53 GMT"
+							"value": "Sat, 14 Oct 2023 17:12:18 GMT"
 						},
 						{
 							"key": "Date",
-							"value": "Fri, 13 Oct 2023 18:29:53 GMT"
-						},
-						{
-							"key": "Connection",
-							"value": "close"
-						},
-						{
-							"key": "X-Powered-By",
-							"value": "PHP/8.1.0"
-						},
-						{
-							"key": "Cache-Control",
-							"value": "no-cache, private"
-						},
-						{
-							"key": "Content-Type",
-							"value": "application/json"
-						},
-						{
-							"key": "X-RateLimit-Limit",
-							"value": "60"
-						},
-						{
-							"key": "X-RateLimit-Remaining",
-							"value": "58"
-						},
-						{
-							"key": "Access-Control-Allow-Origin",
-							"value": "*"
-						}
-					],
-					"cookie": [],
-					"body": "{\n    \"data\": [\n        {\n            \"id\": 6,\n            \"mobile\": \"09337290540\",\n            \"redeemed_at\": \"2023-10-13 18:26:14\"\n        }\n    ]\n}"
-				}
-			]
-		},
-		{
-			"name": "get user wallet balance",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"mobile\":\"09337290548\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "http://127.0.0.1:8000/api/wallet/balance",
-					"protocol": "http",
-					"host": [
-						"127",
-						"0",
-						"0",
-						"1"
-					],
-					"port": "8000",
-					"path": [
-						"api",
-						"wallet",
-						"balance"
-					]
-				}
-			},
-			"response": [
-				{
-					"name": "get user wallet balance",
-					"originalRequest": {
-						"method": "GET",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"mobile\":\"09337290540\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "http://127.0.0.1:8000/api/wallet/balance",
-							"protocol": "http",
-							"host": [
-								"127",
-								"0",
-								"0",
-								"1"
-							],
-							"port": "8000",
-							"path": [
-								"api",
-								"wallet",
-								"balance"
-							]
-						}
-					},
-					"status": "OK",
-					"code": 200,
-					"_postman_previewlanguage": "json",
-					"header": [
-						{
-							"key": "Host",
-							"value": "127.0.0.1:8000"
-						},
-						{
-							"key": "Date",
-							"value": "Fri, 13 Oct 2023 18:30:07 GMT"
-						},
-						{
-							"key": "Date",
-							"value": "Fri, 13 Oct 2023 18:30:07 GMT"
+							"value": "Sat, 14 Oct 2023 17:12:18 GMT"
 						},
 						{
 							"key": "Connection",
@@ -593,12 +485,12 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"balance\": 1000000\n}"
+					"body": "{\n    \"data\": [\n        {\n            \"id\": 1,\n            \"mobile\": \"09120000000\",\n            \"redeemed_at\": \"2023-10-14 17:11:34\"\n        },\n        {\n            \"id\": 7,\n            \"mobile\": \"09120000001\",\n            \"redeemed_at\": \"2023-10-14 17:11:47\"\n        }\n    ]\n}"
 				}
 			]
 		},
 		{
-			"name": "get a user wallet transactions",
+			"name": "get user wallet balance",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -607,7 +499,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"mobile\":\"09337290548\"\r\n}",
+					"raw": "{\r\n    \"mobile\":\"09120000001\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -615,7 +507,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://127.0.0.1:8000/api/wallet/transactions",
+					"raw": "http://127.0.0.1:8000/api/v1/wallet/balance",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -626,20 +518,21 @@
 					"port": "8000",
 					"path": [
 						"api",
+						"v1",
 						"wallet",
-						"transactions"
+						"balance"
 					]
 				}
 			},
 			"response": [
 				{
-					"name": "get a user wallet transactions",
+					"name": "get user wallet balance",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"mobile\":\"09337290540\"\r\n}",
+							"raw": "{\r\n    \"mobile\":\"09120000001\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -647,7 +540,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://127.0.0.1:8000/api/wallet/transactions",
+							"raw": "http://127.0.0.1:8000/api/v1/wallet/balance",
 							"protocol": "http",
 							"host": [
 								"127",
@@ -658,8 +551,9 @@
 							"port": "8000",
 							"path": [
 								"api",
+								"v1",
 								"wallet",
-								"transactions"
+								"balance"
 							]
 						}
 					},
@@ -673,11 +567,11 @@
 						},
 						{
 							"key": "Date",
-							"value": "Fri, 13 Oct 2023 18:30:22 GMT"
+							"value": "Sat, 14 Oct 2023 17:12:47 GMT"
 						},
 						{
 							"key": "Date",
-							"value": "Fri, 13 Oct 2023 18:30:22 GMT"
+							"value": "Sat, 14 Oct 2023 17:12:47 GMT"
 						},
 						{
 							"key": "Connection",
@@ -709,7 +603,125 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"data\": [\n        {\n            \"id\": 5,\n            \"mobile\": \"09337290540\",\n            \"amount\": 1000000,\n            \"type\": \"deposit\",\n            \"date\": \"2023-10-13T18:26:14.000000Z\"\n        }\n    ]\n}"
+					"body": "{\n    \"balance\": 1000000\n}"
+				}
+			]
+		},
+		{
+			"name": "get a user wallet transactions",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"mobile\":\"09120000001\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/wallet/transactions",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"wallet",
+						"transactions"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "get a user wallet transactions",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"mobile\":\"09120000001\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/wallet/transactions",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"wallet",
+								"transactions"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 14 Oct 2023 17:13:10 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 14 Oct 2023 17:13:10 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": [\n        {\n            \"id\": 7,\n            \"mobile\": \"09120000001\",\n            \"amount\": 1000000,\n            \"type\": \"deposit\",\n            \"date\": \"2023-10-14T17:11:47.000000Z\"\n        }\n    ]\n}"
 				}
 			]
 		}

@@ -4,7 +4,6 @@ namespace App\Services;
 
 use App\Models\Wallet;
 use App\Exceptions\NoWalletException;
-use App\Repositories\WalletRepository;
 use Illuminate\Http\Request;
 
 class WalletService

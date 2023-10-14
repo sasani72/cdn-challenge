@@ -7,7 +7,6 @@ use App\Exceptions\RedeemedVoucherException;
 use App\Jobs\ProcessDeposit;
 use App\Models\User;
 use App\Models\Voucher;
-use App\Repositories\VoucherRepository;
 
 class VoucherService
 {
