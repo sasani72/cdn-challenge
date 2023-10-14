@@ -16,7 +16,7 @@ Route::prefix('v1')->group(function () {
 
     Route::apiResource('vouchers', VoucherController::class)->only('store');
 
-    Route::post('vouchers/redeem', [VoucherController::class, 'redeem']);
+    Route::post('vouchers/redeem', [VoucherController::class, 'redeem'])->middleware('throttle:10,5');
 
     Route::get('vouchers/{voucher}/users', [VoucherController::class, 'getVoucherUsers']);
 });
