@@ -8,10 +8,6 @@ use Illuminate\Auth\AuthenticationException;
 use App\Services\UserService;
 use Illuminate\Http\Request;
 
-/**
- * Class UserController
- * @package App\Http\Controllers\Api\V1
- */
 class UserController extends Controller
 {
     protected $userService;

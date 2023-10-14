@@ -2,10 +2,12 @@
 
 namespace Tests\Feature;
 
+use App\Jobs\ProcessDeposit;
 use App\Models\User;
 use App\Models\Voucher;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
+use Illuminate\Support\Facades\Queue;
 use Tests\TestCase;
 
 class VoucherTest extends TestCase
@@ -66,8 +68,10 @@ class VoucherTest extends TestCase
         $response->assertStatus(403);
     }
 
-    public function test_redeem_voucher()
+    public function test_voucher_redemption()
     {
+        Queue::fake();
+
         $voucher = Voucher::factory()->create([
             'max_uses' => 1,
             'starts_at' => now()->subDays(1)->format('Y-m-d H:i:s')
@@ -82,25 +86,24 @@ class VoucherTest extends TestCase
         );
 
         $response->assertStatus(200);
+        $response->assertJson(['message' => 'Voucher redeemed successfully!']);
 
         $this->assertDatabaseHas('users', [
             'mobile' => '09120000000',
         ]);
 
-        $userId = User::where('mobile', '09120000000')->first()->id;
+        $user = User::where('mobile', '09120000000')->with('wallet')->first();
 
-        $this->assertDatabaseHas('wallets', [
-            'user_id' => $userId,
-            'balance' => $voucher->amount
-        ]);
 
         $this->assertDatabaseHas('user_voucher', [
-            'user_id' => $userId,
+            'user_id' => $user->id,
             'voucher_id' => $voucher->id,
         ]);
+
+        Queue::assertPushed(ProcessDeposit::class);
     }
 
-    public function test_redeem_invalid_voucher()
+    public function test_invalid_voucher_redemption()
     {
         $invalidCode = 'INVALID123';
 
@@ -111,7 +114,7 @@ class VoucherTest extends TestCase
         $response->assertJsonStructure(['message', 'data']);
     }
 
-    public function test_redeem_duplicate_voucher()
+    public function test_duplicate_voucher_redemption()
     {
         $user = User::factory()->create(['mobile' => '09120000000']);
         $voucher = Voucher::factory()->create(['max_uses' => 1, 'starts_at' => now()->subDays(1)->format('Y-m-d H:i:s')]);

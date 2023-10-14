@@ -32,7 +32,7 @@ class VoucherTest extends TestCase
         $this->assertInstanceOf(Voucher::class, $voucher);
     }
 
-    public function test_redeem_valid_voucher()
+    public function test_valid_voucher_redemption()
     {
         $user = User::factory()->create();
         $user->wallet()->create();
@@ -47,7 +47,7 @@ class VoucherTest extends TestCase
         ]);
     }
 
-    public function test_redeem_invalid_voucher_code()
+    public function test_invalid_voucher_code_redemption()
     {
         $user = User::factory()->create();
         $user->wallet()->create();
@@ -59,7 +59,7 @@ class VoucherTest extends TestCase
         $voucherService->redeem($user, $invalidCode);
     }
 
-    public function test_redeem_invalid_voucher_date()
+    public function test_invalid_voucher_date_redemption()
     {
         $user = User::factory()->create();
         $user->wallet()->create();
@@ -71,7 +71,7 @@ class VoucherTest extends TestCase
         $voucherService->redeem($user, $voucher->code);
     }
 
-    public function test_redeem_duplicate_voucher()
+    public function test_duplicate_voucher_redemption()
     {
         $user = User::factory()->create();
         $user->wallet()->create();
